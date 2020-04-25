@@ -1,0 +1,4 @@
+build
+/public/outdated
+node_modules
+/src/vendors
