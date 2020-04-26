@@ -22,7 +22,12 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 interface GridListImagesProps {
-    produits: Product[]
+    produits: Product[],
+    values: Values
+}
+
+interface Values {
+    product: string
 }
 interface Product {
     name: string,
@@ -34,13 +39,15 @@ interface Product {
 }
 
 
-const GridListImages = (props: GridListImagesProps) => {
+const GridListImages = ({ values: { product }, produits }: GridListImagesProps) => {
     const classes = useStyles();
+    const filterValues = produits.filter(({ name }) => name.includes(product))
+
     return (
         <div className={classes.root}>
             <GridList cellHeight={250} className={classes.gridList} cols={3} spacing={30}>
-                {props.produits.map((item: Product, index: number) => (
-                    <GridListTile key={item.url} cols={1}>
+                {filterValues.map((item: Product, index: number) => (
+                    <GridListTile key={index} cols={1}>
                         <img src={item.url} />
                     </GridListTile>
                 ))}

@@ -6,7 +6,7 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Link from '@material-ui/core/Link'
 
-import headerImg from '../assets/images/background4.svg'
+import headerImg from '../assets/images/vegatables-on-wood-surface-flatlay.jpg'
 
 const useStyles = makeStyles(theme => ({
     appbar: {
@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     },
 }))
 
-const NavBar = () => {
+const NavBar = (): JSX.Element => {
     const classes = useStyles()
     return (
         <div>
