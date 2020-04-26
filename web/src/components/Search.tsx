@@ -10,10 +10,11 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       display: 'flex',
       flexWrap: 'wrap',
-      marginLeft: '200px',
-      marginRight: '200px',
-      marginBottom: '20px',
-      marginTop: '20px',
+      maxWidth: 300,
+      marginLeft: theme.spacing(8),
+      marginRight: theme.spacing(8),
+      marginBottom: theme.spacing(4),
+      marginTop: theme.spacing(4),
     },
     input: {
       marginLeft: theme.spacing(1),
@@ -21,10 +22,6 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     iconButton: {
       padding: 10,
-    },
-    divider: {
-      height: 28,
-      margin: 4,
     },
   }),
 )

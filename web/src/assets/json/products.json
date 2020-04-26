@@ -2,28 +2,17 @@
   "produits": [
     {
       "name": "tomates",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces",
-        "poids"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces", "poids"],
       "image": {
-        "src": "web/src/assets/images/tomates.jpg",
+        "src": "../../assets/images/tomates.jpg",
         "url": "https://images.freeimages.com/images/large-previews/786/tomatoes-1323819.jpg"
       }
     },
     {
       "name": "concombre",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/concombre.jpg",
         "url": "https://cdn.pixabay.com/photo/2013/02/06/20/43/cucumber-78789_1280.jpg"
@@ -31,13 +20,8 @@
     },
     {
       "name": "courgettes",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/courgettes.jpg",
         "url": "https://images.freeimages.com/images/large-previews/1fa/italian-zucchine-1562358.jpg"
@@ -45,13 +29,8 @@
     },
     {
       "name": "viande hachee",
-      "tags": [
-        "boucher",
-        "supermarche"
-      ],
-      "quantite": [
-        "poids"
-      ],
+      "tags": ["boucher", "supermarche"],
+      "quantite": ["poids"],
       "image": {
         "src": "web/src/assets/images/viande-hache.jpg",
         "url": "https://cdn.pixabay.com/photo/2015/05/25/16/19/mincer-783559_1280.jpg"
@@ -59,13 +38,8 @@
     },
     {
       "name": "basilic",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/basilic.jpg",
         "url": "https://images.freeimages.com/images/large-previews/cd8/basil-1505968.jpg"
@@ -73,13 +47,8 @@
     },
     {
       "name": "coriandre fraiche",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/coriandre.jpg",
         "url": "https://cdn.pixabay.com/photo/2016/03/29/01/06/cilantro-1287301_1280.jpg"
@@ -87,12 +56,8 @@
     },
     {
       "name": "sucre",
-      "tags": [
-        "supermarche"
-      ],
-      "quantite": [
-        "poids"
-      ],
+      "tags": ["supermarche"],
+      "quantite": ["poids"],
       "image": {
         "src": "web/src/assets/images/sucre.jpg",
         "url": "https://cdn.pixabay.com/photo/2020/04/13/21/54/white-5040151_1280.jpg"
@@ -100,13 +65,8 @@
     },
     {
       "name": "aubergines",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/aubergines.jpg",
         "url": "https://cdn.pixabay.com/photo/2018/10/19/13/47/eggplant-3758698_1280.jpg"
@@ -114,12 +74,8 @@
     },
     {
       "name": "beurre",
-      "tags": [
-        "supermarche"
-      ],
-      "quantite": [
-        "poids"
-      ],
+      "tags": ["supermarche"],
+      "quantite": ["poids"],
       "image": {
         "src": "web/src/assets/images/beurre.jpg",
         "url": "https://cdn.pixabay.com/photo/2018/02/25/07/15/food-3179853_1280.jpg"
@@ -127,13 +83,8 @@
     },
     {
       "name": "pois chiche",
-      "tags": [
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces",
-        "poids"
-      ],
+      "tags": ["supermarche"],
+      "quantite": ["pieces", "poids"],
       "image": {
         "src": "web/src/assets/images/pois-chiche.jpg",
         "url": "https://cdn.pixabay.com/photo/2017/06/09/22/32/chickpeas-2388438_1280.jpg"
@@ -141,14 +92,8 @@
     },
     {
       "name": "tomates cerise",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces",
-        "poids"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces", "poids"],
       "image": {
         "src": "web/src/assets/images/tomates-cerise.jpg",
         "url": "https://images.freeimages.com/images/large-previews/893/cherry-tomatoes-1511695.jpg"
@@ -156,14 +101,8 @@
     },
     {
       "name": "chevre frais",
-      "tags": [
-        "supermarche",
-        "fromager"
-      ],
-      "quantite": [
-        "pieces",
-        "poids"
-      ],
+      "tags": ["supermarche", "fromager"],
+      "quantite": ["pieces", "poids"],
       "image": {
         "src": "web/src/assets/images/chevre-frais.jpg",
         "url": "https://cdn.pixabay.com/photo/2016/11/12/10/08/goat-1818552_1280.jpg"
@@ -171,13 +110,8 @@
     },
     {
       "name": "feta",
-      "tags": [
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces",
-        "poids"
-      ],
+      "tags": ["supermarche"],
+      "quantite": ["pieces", "poids"],
       "image": {
         "src": "web/src/assets/images/feta.jpg",
         "url": "https://cdn.pixabay.com/photo/2010/12/16/12/42/greek-feta-cheese-3548_1280.jpg"
@@ -185,14 +119,8 @@
     },
     {
       "name": "filets de saumon",
-      "tags": [
-        "poissonnier",
-        "supermarche"
-      ],
-      "quantite": [
-        "poids",
-        "pieces"
-      ],
+      "tags": ["poissonnier", "supermarche"],
+      "quantite": ["poids", "pieces"],
       "image": {
         "src": "web/src/assets/images/saumon.png",
         "url": "https://www.trainer.ae/articles/wp-content/uploads/2016/04/salmon-filets-duo-620px.png"
@@ -200,12 +128,8 @@
     },
     {
       "name": "thon en boite",
-      "tags": [
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/thon-en-boite.jpg",
         "url": "https://www.trainer.ae/articles/wp-content/uploads/2016/04/mantab_Chunk_light_tuna_Olympic.jpg"
@@ -213,13 +137,8 @@
     },
     {
       "name": "thon",
-      "tags": [
-        "poissonnier"
-      ],
-      "quantite": [
-        "poids",
-        "pieces"
-      ],
+      "tags": ["poissonnier"],
+      "quantite": ["poids", "pieces"],
       "image": {
         "src": "web/src/assets/images/thon.jpg",
         "url": "https://cdn.pixabay.com/photo/2018/05/17/12/09/tuna-3408409_1280.jpg"
@@ -227,14 +146,8 @@
     },
     {
       "name": "saucisse",
-      "tags": [
-        "boucher",
-        "supermarche"
-      ],
-      "quantite": [
-        "poids",
-        "pieces"
-      ],
+      "tags": ["boucher", "supermarche"],
+      "quantite": ["poids", "pieces"],
       "image": {
         "src": "web/src/assets/images/saucisses.jpg",
         "url": "https://cdn.pixabay.com/photo/2019/05/31/21/40/sausage-4243068_1280.jpg"
@@ -242,13 +155,8 @@
     },
     {
       "name": "cabillaud",
-      "tags": [
-        "poissonnier"
-      ],
-      "quantite": [
-        "poids",
-        "pieces"
-      ],
+      "tags": ["poissonnier"],
+      "quantite": ["poids", "pieces"],
       "image": {
         "src": "web/src/assets/images/cabillaud.jpg",
         "url": "https://cdn.shopify.com/s/files/1/2390/5583/products/DOS_CABILLAUD_CITRON_VERT_PECHE_MAISON.jpg?v=1510003055"
@@ -256,13 +164,8 @@
     },
     {
       "name": "carottes",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/carottes.jpg",
         "url": "https://cdn.pixabay.com/photo/2017/06/09/16/39/carrots-2387394_1280.jpg"
@@ -270,13 +173,8 @@
     },
     {
       "name": "navets",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/navets.jpg",
         "url": "https://cdn.pixabay.com/photo/2014/04/07/01/40/turnip-318148_1280.jpg"
@@ -284,13 +182,8 @@
     },
     {
       "name": "oignons",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/oignons.jpg",
         "url": "https://cdn.pixabay.com/photo/2016/05/16/22/47/onions-1397037_1280.jpg"
@@ -298,13 +191,8 @@
     },
     {
       "name": "oignons rouges",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/oignons-rouges.jpg",
         "url": "https://cdn.pixabay.com/photo/2016/08/03/01/13/onion-1565604_1280.jpg"
@@ -312,12 +200,8 @@
     },
     {
       "name": "huile d'olive",
-      "tags": [
-        "supermarche"
-      ],
-      "quantite": [
-        "volume"
-      ],
+      "tags": ["supermarche"],
+      "quantite": ["volume"],
       "image": {
         "src": "web/src/assets/images/huile-olive.jpg",
         "url": "https://cdn.pixabay.com/photo/2014/05/28/00/27/olive-oil-356102_1280.jpg"
@@ -325,13 +209,8 @@
     },
     {
       "name": "citrons jaunes",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/citrons-jaunes.jpg",
         "url": "https://cdn.pixabay.com/photo/2017/02/05/12/31/lemons-2039830_1280.jpg"
@@ -339,13 +218,8 @@
     },
     {
       "name": "citrons verts",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/citrons-verts.jpg",
         "url": "https://cdn.pixabay.com/photo/2016/08/10/15/27/green-1583575_1280.jpg"
@@ -353,12 +227,8 @@
     },
     {
       "name": "penne",
-      "tags": [
-        "supermarche"
-      ],
-      "quantite": [
-        "poids"
-      ],
+      "tags": ["supermarche"],
+      "quantite": ["poids"],
       "image": {
         "src": "web/src/assets/images/penne.jpg",
         "url": "https://cdn.pixabay.com/photo/2017/11/10/15/03/pasta-2936529_1280.jpg"
@@ -366,12 +236,8 @@
     },
     {
       "name": "fusilli",
-      "tags": [
-        "supermarche"
-      ],
-      "quantite": [
-        "poids"
-      ],
+      "tags": ["supermarche"],
+      "quantite": ["poids"],
       "image": {
         "src": "web/src/assets/images/fusilli.jpg",
         "url": "https://cdn.pixabay.com/photo/2015/03/23/23/40/noodles-686858_1280.jpg"
@@ -379,12 +245,8 @@
     },
     {
       "name": "linguine",
-      "tags": [
-        "supermarche"
-      ],
-      "quantite": [
-        "poids"
-      ],
+      "tags": ["supermarche"],
+      "quantite": ["poids"],
       "image": {
         "src": "web/src/assets/images/linguine.jpg",
         "url": "https://www.cucinadellacucina.com/wp-content/uploads/Linguini_640x640.jpg"
@@ -392,12 +254,8 @@
     },
     {
       "name": "tagliatelles",
-      "tags": [
-        "supermarche"
-      ],
-      "quantite": [
-        "poids"
-      ],
+      "tags": ["supermarche"],
+      "quantite": ["poids"],
       "image": {
         "src": "web/src/assets/images/tagliatelle.jpg",
         "url": "https://cdn.pixabay.com/photo/2019/10/03/09/58/pasta-machine-4522848_1280.jpg"
@@ -405,13 +263,8 @@
     },
     {
       "name": "ail",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/ail.jpg",
         "url": "https://cdn.pixabay.com/photo/2013/02/21/19/12/garlic-84691_1280.jpg"
@@ -419,12 +272,8 @@
     },
     {
       "name": "tomates concassees",
-      "tags": [
-        "supermarche"
-      ],
-      "quantite": [
-        "poids"
-      ],
+      "tags": ["supermarche"],
+      "quantite": ["poids"],
       "image": {
         "src": "web/src/assets/images/sauce-tomate.jpg",
         "url": "https://cdn.loveandlemons.com/wp-content/uploads/2019/12/marinara-sauce-500x375.jpg"
@@ -432,14 +281,8 @@
     },
     {
       "name": "pommes de terre",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces",
-        "poids"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces", "poids"],
       "image": {
         "src": "web/src/assets/images/pomme-de-terre.jpg",
         "url": "https://cdn.pixabay.com/photo/2016/08/11/08/43/potatoes-1585060_1280.jpg"
@@ -447,13 +290,8 @@
     },
     {
       "name": "poivrons rouges",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/poivrons-rouges.jpg",
         "url": "https://www.le-panier-de-flo.fr/578-large_default/poivrons-rouges-600g.jpg"
@@ -461,13 +299,8 @@
     },
     {
       "name": "echalottes",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/echalottes.jpg",
         "url": "https://cdn.pixabay.com/photo/2011/03/24/10/42/red-shallots-5768_1280.jpg"
@@ -475,13 +308,8 @@
     },
     {
       "name": "ciboulette",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/ciboulette.jpg",
         "url": "https://cdn.pixabay.com/photo/2016/03/28/22/46/chives-1287096_1280.jpg"
@@ -489,13 +317,8 @@
     },
     {
       "name": "poivrons verts",
-      "tags": [
-        "primeur",
-        "supermarche"
-      ],
-      "quantite": [
-        "pieces"
-      ],
+      "tags": ["primeur", "supermarche"],
+      "quantite": ["pieces"],
       "image": {
         "src": "web/src/assets/images/poivrons verts.jpg",
         "url": "https://p4.storage.canalblog.com/42/26/201778/26292435.jpg"

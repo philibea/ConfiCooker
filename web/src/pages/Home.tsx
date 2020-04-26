@@ -12,9 +12,8 @@ export interface HomeState {
 }
 
 const Home = () => {
-
   const [values, setValues] = useState<HomeState>({
-    product: 'tomate',
+    product: '',
   })
 
   return (
@@ -22,7 +21,8 @@ const Home = () => {
       <NavBar />
       <Search values={values} setValues={setValues} />
       <GridListImages values={values} produits={products.produits} />
-    </>)
+    </>
+  )
 }
 
 
