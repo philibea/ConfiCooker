@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { makeStyles } from '@material-ui/core/styles'
 import { AppBar, Box, Toolbar, Link, Typography } from '@material-ui/core'
 
@@ -12,6 +11,7 @@ const useStyles = makeStyles(theme => ({
         background: `#020202`,
         backgroundSize: 'contain',
         marginBottom: '20px',
+        textAlign: "center",
     },
     header: {
         height: '400px',
@@ -31,7 +31,7 @@ const NavBar = () => {
                         width="100%"
                     >
                         <Typography variant="h1">
-                            Confi Cooking
+                            ConfiCooking
                         </Typography>
                     </Box>
                 </Toolbar>

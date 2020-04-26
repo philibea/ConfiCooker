@@ -14,7 +14,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, '/dist'),
     compress: true,
-    port: 9000,
+    port: 9001,
   },
   module: {
     rules: [
@@ -32,6 +32,18 @@ module.exports = {
         options: {
           name: 'static/medias/[name].[hash:8].[ext]',
         },
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[hash:8].[ext]',
+              outputPath: 'static/fonts/',
+            },
+          },
+        ],
       },
     ],
   },
