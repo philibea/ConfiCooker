@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
-import { GridList, GridListTile, GridListTileBar, ListSubheader, IconButton } from '@material-ui/core'
+import { GridList, GridListTile, Card, CardMedia } from '@material-ui/core'
+
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -15,26 +16,44 @@ const useStyles = makeStyles((theme: Theme) =>
             width: '80%',
             height: '100%',
         },
-        icon: {
-            color: 'rgba(255, 255, 255, 0.54)',
+        listTile: {
+            maxWidth: 350,
+            maxHeight: 250,
+        },
+        card: {
+            opacity: 1,
+            transition: 'transform 300ms ease',
+            "&:hover": {
+                cursor: "pointer",
+                transform: 'scale(1.5)',
+                opacity: 0.5,
+            }
+        },
+        cardMedia: {
+            paddingTop: '100%', // format 1:1
         },
     }),
 );
 
 interface GridListImagesProps {
     produits: Product[],
-    values: Values
+    values: SearchValues
 }
 
-interface Values {
+interface SearchValues {
     product: string
+}
+
+interface Image {
+    url: string,
+    src: string
 }
 interface Product {
     name: string,
     description?: string,
     quantite: string[],
     tags: string[],
-    url: string,
+    image?: Image,
     cols?: number,
 }
 
@@ -45,14 +64,20 @@ const GridListImages = ({ values: { product }, produits }: GridListImagesProps) 
 
     return (
         <div className={classes.root}>
-            <GridList cellHeight={250} className={classes.gridList} cols={3} spacing={30}>
-                {filterValues.map((item: Product, index: number) => (
-                    <GridListTile key={index} cols={1}>
-                        <img src={item.url} />
+            <GridList cellHeight={300} className={classes.gridList} cols={3} spacing={30}>
+                {filterValues.map(({ image, name }: Product, index: number) => (
+                    <GridListTile key={index} cols={1} className={classes.listTile} >
+                        <Card className={classes.card}>
+                            <CardMedia
+                                className={classes.cardMedia}
+                                image={image?.url}
+                                title={name}
+                            />
+                        </Card>
                     </GridListTile>
                 ))}
             </GridList>
-        </div>
+        </div >
     );
 
 }

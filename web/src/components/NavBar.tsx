@@ -1,17 +1,15 @@
 import React from 'react'
 
 import { makeStyles } from '@material-ui/core/styles'
-import Box from '@material-ui/core/Box'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Link from '@material-ui/core/Link'
+import { AppBar, Box, Toolbar, Link, Typography } from '@material-ui/core'
+
 
 import headerImg from '../assets/images/vegatables-on-wood-surface-flatlay.jpg'
 
 const useStyles = makeStyles(theme => ({
     appbar: {
         height: '200px',
-        background: `#8f7959 url(${headerImg}) center repeat`,
+        background: `#020202`,
         backgroundSize: 'contain',
         marginBottom: '20px',
     },
@@ -20,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     },
 }))
 
-const NavBar = (): JSX.Element => {
+const NavBar = () => {
     const classes = useStyles()
     return (
         <div>
@@ -32,6 +30,9 @@ const NavBar = (): JSX.Element => {
                         justifyContent="center"
                         width="100%"
                     >
+                        <Typography variant="h1">
+                            Confi Cooking
+                        </Typography>
                     </Box>
                 </Toolbar>
             </AppBar>
