@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'Forum';
+  src: url('./assets/fonts/Forum/Forum-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/Forum/Forum-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./assets/fonts/Forum/Forum-Regular.otf')
+      format('opentype'),
+    /* Open Type Font */ url('./assets/fonts/Forum/Forum-Regular.svg')
+      format('svg'),
+    /* Legacy iOS */ url('./assets/fonts/Forum/Forum-Regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('./assets/fonts/Forum/Forum-Regular.woff')
+      format('woff'),
+    /* Modern Browsers */ url('./assets/fonts/Forum/Forum-Regular.woff2')
+      format('woff2'); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -5,6 +24,7 @@ html {
 }
 
 body {
+  font-family: 'Asap', 'System', sans-serif !important;
   margin: 0;
   background-color: #020202;
 }

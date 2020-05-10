@@ -1,23 +1,31 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
-import { FormControl, IconButton, InputBase, OutlinedInput, InputLabel, InputAdornment, Paper, TextField } from '@material-ui/core'
+import { Box, Button, IconButton, InputBase, Paper } from '@material-ui/core'
 import SearchIcon from '@material-ui/icons/Search';
+import storage from '../helpers/storage'
 
-import HomeState from '../pages/Home'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       display: 'flex',
       flexWrap: 'wrap',
-      maxWidth: 300,
-      marginLeft: theme.spacing(8),
-      marginRight: theme.spacing(8),
+      justifyContent: 'space-around',
+      overflow: 'hidden',
+      width: '80%',
+      margin: 'auto',
       marginBottom: theme.spacing(4),
-      marginTop: theme.spacing(4),
+    },
+    list: {
+      marginLeft: 'auto',
+    },
+    button: {
+      width: theme.spacing(16),
+      height: '100%',
+
     },
     input: {
-      marginLeft: theme.spacing(1),
+      margin: theme.spacing(1),
       flex: 1,
     },
     iconButton: {
@@ -26,7 +34,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 )
 interface Values {
-  product: string
+  searchProduct: string
 }
 
 interface SearchProps {
@@ -39,23 +47,32 @@ const Search = ({ values, setValues }: SearchProps): JSX.Element => {
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement>,
   ) => {
-    setValues({ ...values, product: event.target.value })
+    setValues({ ...values, searchProduct: event.target.value })
   }
 
+  const { products = [] } = storage.getProductsList()
 
+  console.log(products)
   return (
-    <Paper component="form" className={classes.root}>
-      <InputBase
-        className={classes.input}
-        placeholder="Search Product"
-        value={values.product}
-        onChange={(event: React.ChangeEvent<HTMLInputElement>) => handleChange(event)}
-        inputProps={{ 'aria-label': 'search a product' }}
-      />
-      <IconButton type="submit" className={classes.iconButton} aria-label="search">
-        <SearchIcon />
-      </IconButton>
-    </Paper>
+    <Box className={classes.root}>
+      <Paper>
+        <InputBase
+          className={classes.input}
+          placeholder="Search Product"
+          value={values.searchProduct}
+          onChange={(event: React.ChangeEvent<HTMLInputElement>) => handleChange(event)}
+          inputProps={{ 'aria-label': 'search a product' }}
+        />
+        <IconButton type="submit" className={classes.iconButton} aria-label="search">
+          <SearchIcon />
+        </IconButton>
+      </Paper>
+      {/* {products.length !== 0 &&
+        <Box className={classes.list}>
+          <Button color="primary" variant="contained" className={classes.button} >See list</Button>
+        </Box>
+      } */}
+    </Box>
   );
 }
 export default Search
