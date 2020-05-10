@@ -1,0 +1,29 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    env:
+      IMAGE: app
+      REGISTRY: rg.fr-par.scw.cloud
+      REGISTRY_SCOPE: conficooker
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Log Registry
+        run: echo "${{ secrets.SCW_SECRET_TOKEN }}" | docker login $REGISTRY/$REGISTRY_SCOPE -u nologin -p ${{ secrets.SCW_SECRET_TOKEN }}
+
+      - name: Build Image
+        run: docker build -t $IMAGE:$GITHUB_SHA -f ./web/docker/Dockerfile .
+
+      - name: Tag Image
+        run: docker tag $IMAGE:$GITHUB_SHA $REGISTRY/$REGISTRY_SCOPE/$IMAGE:$GITHUB_SHA
+
+      - name: Push Registry
+        run: docker push $REGISTRY/$REGISTRY_SCOPE/$IMAGE:$GITHUB_SHA
